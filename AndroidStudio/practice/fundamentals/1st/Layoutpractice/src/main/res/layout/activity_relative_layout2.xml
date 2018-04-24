@@ -14,15 +14,54 @@
         android:id="@+id/Button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="1" />
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Button1"
+        android:layout_toRightOf="@+id/Button1"
+        android:layout_weight="1"
+        android:text="2"
+        android:layout_alignParentRight="@+id/Button1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Button1"
+        android:layout_toRightOf="@+id/button"
+        android:layout_weight="1"
+        android:text="3" />
     <!-- Button4 の右に、縦に 2 つのボタンを並べる -->
     <!-- Button4 の大きさは、縦に 2 つ並べたボタン分の高さに合わせる -->
     <Button
         android:id="@+id/Button4"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="101dp"
         android:layout_below="@+id/Button1"
         android:text="4" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Button1"
+        android:layout_toEndOf="@+id/Button1"
+        android:text="5"
+        android:layout_toRightOf="@+id/Button1" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="244dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Button4"
+        android:layout_toEndOf="@+id/Button1"
+        android:text="6"
+        android:layout_toRightOf="@+id/Button1" />
+
+
 </RelativeLayout>
 
