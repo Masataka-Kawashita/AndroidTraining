@@ -10,11 +10,28 @@
     tools:context=".MainActivity">
 
     <!-- TODO: LongText をスクロールできるようにする -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/LongText"
+            android:layout_width="match_parent"
+            android:layout_height="421dp"
+            android:text="@string/long_text" />
+
+
+
+    </android.support.v4.widget.NestedScrollView>
     <!-- TODO: LongText の下に 1 つ Button を配置する -->
-    <TextView
-        android:id="@+id/LongText"
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="340dp"
         android:layout_height="wrap_content"
-        android:text="@string/long_text" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
+
 </RelativeLayout>
 
